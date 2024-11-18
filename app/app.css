@@ -1,0 +1,19 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+.login-container {
+  padding: 20;
+  background-color: blue;    
+    background-image: url('assets/fondoPalMovil.jpg');
+    background-size: cover;
+}
+
+.title {
+  font-size: 24;
+  margin-bottom: 20;
+}
+
+.error {
+  color: red;
+  margin-top: 10;
+}

@@ -1,0 +1,24 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="page">
+    <ActionBar title="Palpailon" class="action-bar" />
+
+    <GridLayout rows="*, auto" class="login-container">        
+        
+        <!-- Fondo y Contenedor -->
+        <StackLayout class="page">
+        <Image src="~/assets/anastasia.png" height="60" loaded="onImageLoaded" />
+            <Label text="Iniciar Sesión" class="title" horizontalAlignment="center" />
+
+            <!-- Input para correo -->
+            <TextField hint="Correo electrónico" keyboardType="email" id="email" />
+
+            <!-- Input para contraseña -->
+            <TextField hint="Contraseña" secure="true" id="password" />
+
+            <!-- Botón de inicio de sesión -->
+            <Button text="Iniciar Sesión" tap="onLoginTap" class="btn btn-primary" />
+
+            <!-- Mensaje de error -->
+            <Label text="" id="errorLabel" class="error" visibility="collapsed" />
+        </StackLayout>
+    </GridLayout>
+</Page>
